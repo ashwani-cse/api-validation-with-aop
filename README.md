@@ -67,9 +67,10 @@ The `ApiValidationAspect` aspect intercepts method calls in the `CartController`
 - Project Lombok (optional)
 - Spring Boot Starter Test (for testing)
 
-## Build
 
-Build the project using Maven:
-
-```bash
-mvn clean install
+## Social Profile
+- [LinkedIn](https://www.linkedin.com/in/ashwanicse/)
+- [Leetcode](https://leetcode.com/ashwani__kumar/)
+- [Topmate](https://topmate.io/ashwanikumar)
+## Linkedin Newsletter
+- [Subscribe](https://www.linkedin.com/newsletters/7084124970443767808/)
