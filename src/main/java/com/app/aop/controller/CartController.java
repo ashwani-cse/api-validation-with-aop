@@ -15,13 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-public class CartController {
+public class CartController implements CartApi {
 
-    @GetMapping("/{cartId}")
-    public ResponseEntity<String> getCart(@PathVariable("cartId") String cartId,
-                                          @RequestHeader("affiliate")
-                                          @Pattern(regexp = "^[a-zA-Z]{1,3}$") String affiliate) {
+    @Override
+    public ResponseEntity<String> getCart(String cartId, String affiliate) {
         log.info("CartController:- fetching cart for cartId: {}", cartId);
         return new ResponseEntity<>("Cart returned", HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<String> getCartLegacy(String cartId, String affiliate) {
+        return getCart(cartId, affiliate);
     }
 }
